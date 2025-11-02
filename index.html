@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nupe Vision TV - Your Vision, Our Mission</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Nupe Vision TV: Your Vision, Our Mission. Exclusive shows, interviews, and stories highlighting achievement and community." />
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Open Graph (social share) -->
+  <meta property="og:title" content="Nupe Vision TV" />
+  <meta property="og:description" content="Your Vision, Our Mission — entertainment redefined." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nupevisiontv.com" />
+  <!-- <meta property="og:image" content="https://nupevisiontv.com/assets/share-image.png" /> -->
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo" onclick="showPage('home')" aria-label="Go to Home">NUPE<span>VISION</span>TV</div>
+    <ul class="nav-links" role="menu">
+      <li><a role="menuitem" tabindex="0" onclick="showPage('home')">Home</a></li>
+      <li><a role="menuitem" tabindex="0" onclick="showPage('features')">Features</a></li>
+      <li><a role="menuitem" tabindex="0" onclick="showPage('about')">About</a></li>
+      <li><a role="menuitem" tabindex="0" onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">WELCOME TO<span>NUPEVISION TV</span></h1>
+        <p class="tagline">Your Vision, Our Mission - Experience Entertainment Redefined</p>
+        <button class="cta-button" onclick="showPage('features')">Discover More</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 NupeVision TV. All rights reserved. | <a href="https://nupevisiontv.com">NupeVisionTV.com</a></p>
+    </footer>
+  </div>
+
+  <!-- FEATURES PAGE -->
+  <div id="features" class="page" aria-labelledby="features-title">
+    <div style="height: 80px;"></div>
+    <section class="content-section">
+      <h2 id="features-title">Why Choose <span>NUPEVision TV</span></h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Premium Content</h3>
+          <p>Access exclusive shows, clips, and original interviews designed to inspire achievement and community impact.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Crystal Clear Quality</h3>
+          <p>Experience entertainment in stunning HD and 4K resolution with superior audio quality.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Watch It On Platforms</h3>
+          <p>YouTube, Instagram, and TikTok.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 NupeVision TV. All rights reserved. | <a href="https://nupevisiontv.com">NupeVisionTV.com</a></p>
+    </footer>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page" aria-labelledby="about-title">
+    <div style="height: 80px;"></div>
+    <section class="content-section">
+      <h2 id="about-title">About <span>NupeVision TV</span></h2>
+      <div class="about-content">
+        <p>NupeVision TV is dedicated to showcasing excellence, brotherhood, and achievement through engaging digital content.</p>
+        <p>We bring together exclusive interviews, behind-the-scenes footage, and inspiring stories from across the nation.</p>
+        <p>Through YouTube, Instagram, and TikTok, we connect with supporters worldwide, building a digital community of purpose.</p>
+        <p>Join us as we document, celebrate, and inspire the next generation of leaders.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 NupeVision TV. All rights reserved. | <a href="https://nupevisiontv.com">NupeVisionTV.com</a></p>
+    </footer>
+  </div>
+
+  <!-- CONTACT PAGE -->
+  <div id="contact" class="page" aria-labelledby="contact-title">
+    <div style="height: 80px;"></div>
+    <section class="content-section">
+      <h2 id="contact-title">Get in <span>Touch</span></h2>
+      <div class="contact-container">
+        <div class="contact-form">
+          <!-- OPTION A (no backend): keep JS alert only -->
+          <!-- OPTION B (Netlify Forms): add name="contact", data-netlify="true", and a hidden honeypot -->
+          <!-- Option B example: <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)"> -->
+          <form onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 NupeVision TV. All rights reserved. | <a href="https://nupevisiontv.com">NupeVisionTV.com</a></p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
